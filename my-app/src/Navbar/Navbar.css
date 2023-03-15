@@ -1,0 +1,47 @@
+.nav-links {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-out;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+}
+
+.nav-linksLogo{
+  height: 25px;
+}
+
+.nav-links:hover {
+  color: #e9ba23;
+}
+
+.login-button:hover {
+  color: #9c9c9c!important;
+}
+
+.studio-link {
+  height: 29px;
+  width: 273px;
+  left: 144px;
+  top: 27px;
+  border-radius: nullpx;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.login-button {
+  background-color: #0038FF;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  padding: 5px 10px;
+  text-align: center;
+}

@@ -1,0 +1,37 @@
+.lugarACompartir {
+  overflow: hidden;
+}
+
+.fotoFondo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.texto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fotoATope {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  z-index: 1;
+}
+
+.fotoATope img {
+  width: 50%; /* Establece el ancho de la imagen como 100% */
+  height: auto; /* Establece la altura como automática para mantener la relación de aspecto */
+}
+
+.fotoATopeYTextoContainerBro{
+  
+}
+
+@media (max-width: 768px) { /* Pantalla móvil */
+  .fotoFondo {
+    height: 80vh; /* Altura del 80% del viewport */
+  }
+}
