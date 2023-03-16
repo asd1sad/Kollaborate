@@ -1,38 +1,65 @@
-
-.lugarACompartir {
-  overflow: hidden;
+.fotoATopeYTextoContainerBro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .fotoFondo {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fotoFondo img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  z-index: -1;
 }
 
-.texto-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 1rem;
+.fotoATope, .texto {
+  position: relative;
+  flex-basis: 50%;
+  margin-top: 140px;
 }
 
-.fotoATope {
-  z-index: 1;
-  margin-bottom: 2rem;
+.texto {
+  position: relative;
+  z-index: 100; /* Este valor debe ser mayor que el valor de z-index del fondo borroso */
+  margin-top: 190px;
+  font-family: Inria Serif;
+  font-size: 23.62px;
+  font-weight: 300;
+  line-height: 29px;
+  text-align: left;
+  color: #D0BC90;
 }
 
-.fotoATope img {
-  max-width: 100%;
-  height: auto;
+.texto::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.22);
+  filter: blur(16.5px);
+  border-radius: 10px;
+  z-index: -140; /* Este valor debe ser menor que el valor de z-index del texto */
+}
+
+
+.no-underline {
+  text-decoration: none;
+}
+
+.btn p{
+  font-family: 'Inria Serif';
+  font-weight: 700;
+  font-size: 32px;
+  color: #B9AE85;
+  box-sizing: border-box;
+  width: 172px;
+  height: 62px;
+  background: #23533A;
+  border: 1px solid #D0BC90;
+  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
@@ -42,5 +69,9 @@
 
   .texto-container {
     padding: 0;
+  }
+
+  .fotoATope, .texto {
+    flex-basis: 100%;
   }
 }

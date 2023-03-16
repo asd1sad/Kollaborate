@@ -23,7 +23,7 @@ const Game = () => {
         </div>
       </div>
       <div className='btn'>
-        <button>Play Now</button>
+        <a href="https://play.unity.com/mg/other/webgl-builds-323687"><button>Play Now</button></a>
       </div>
     </div>
   );
