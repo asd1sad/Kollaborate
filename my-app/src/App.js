@@ -2,11 +2,11 @@ import Navbar from './Navbar/Navbar.js';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 
-import Sliderp from './Sliderp';
 import Game from './Game/Game.js';
-import Game2 from './Game2/Game2.js';
 import Latest from './Latest/Latest.js';
 /* <Sliderp />
+import Sliderp from './Sliderp';
+import Game from './Game/Game.js';
  <Game />
 */
 function App() {
@@ -14,8 +14,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar />
-       
-        <Game2 />
+        <Game />
         <Latest/>
       </div>
     </BrowserRouter>

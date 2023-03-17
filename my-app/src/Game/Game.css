@@ -1,37 +1,117 @@
-.lugarACompartir {
-  overflow: hidden;
-}
-
-.fotoFondo img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.texto-container {
+.flex-container {
   display: flex;
+  background-image: url("../assets/bacvk.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 80vh;
 }
-
-.fotoATope {
+.flex-item1, .flex-item2 {
+  display: flex;
+  flex-direction: column; 
+  width: 50%;
+}
+#fotoCastleIn{
+  width: 55%;
+  height: auto;
+  margin: -0px 0px 230px 130px; 
+}
+#texto ,#texto2{
+  position: relative;
+  z-index: 100; /* Este valor debe ser mayor que el valor de z-index del fondo borroso */
+  font-family: Inria Serif;
+  font-size: 23.62px;
+  font-weight: 300;
+  line-height: 29px;
+  text-align: left;
+  color: #D0BC90;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+}
+#texto::before {
+  content: '';
   position: absolute;
-  top: 25%;
+  top: 0;
   left: 0;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.22);
+  filter: blur(16.5px);
+  border-radius: 10px;
+  z-index: -140; /* Este valor debe ser menor que el valor de z-index del texto */
 }
-
-.fotoATope img {
-  width: 50%; /* Establece el ancho de la imagen como 100% */
-  height: auto; /* Establece la altura como automática para mantener la relación de aspecto */
+.no-underline {
+  text-decoration: none;
 }
-
-.fotoATopeYTextoContainerBro{
-  
+.playLearn{
+  display: inline-flex;
+  flex-wrap: wrap;
 }
-
-@media (max-width: 768px) { /* Pantalla móvil */
-  .fotoFondo {
-    height: 80vh; /* Altura del 80% del viewport */
+#playnow {
+  font-family: 'Inria Serif';
+  font-weight: 700;
+  color: #B9AE85;
+  font-size: 32px;
+  box-sizing: border-box;
+  width: 172px;
+  height: 62px;
+  background: #23533A;
+  border: 1px solid #D0BC90;
+  border-radius: 10px;
+}
+#learnMore{
+  color: #B9AE85;
+  margin-left: 20px;
+  margin-top: 5px;
+  font-size: 27px;
+}
+.underline{
+  text-decoration-color: #B9AE85;
+}
+#texto2{
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .playLearn{
+    display: flex;
+    margin-right: 0px;  
+  }
+  #fotoCastleIn{
+    margin: 0; 
+    width: 70%;
+  }
+  .flex-item1{
+    display: flex;
+    align-items: center;
+  }
+  #texto{
+  display: none;
+  }
+  #texto2{
+    display: block;
+    text-align: center;
+  }
+  .flex-container{
+    flex-direction: column;
+  }
+  .flex-item1, .flex-item2{
+    width: 100%;
+  }
+  .flex-item2{
+    align-items: center;
+  }
+  #playnow{
+    font-size: 20px;
+    width: 122px;
+    height: 42px;
+  }
+  #learnMore{
+    display: none;
   }
 }
+
+ 

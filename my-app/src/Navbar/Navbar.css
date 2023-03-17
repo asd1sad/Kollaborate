@@ -1,3 +1,6 @@
+.navbar{
+  height: 10vh;
+}
 .nav-links {
   color: #000;
   text-decoration: none;
@@ -8,19 +11,18 @@
   font-weight: 600;
   line-height: 17px;
 }
-
 .nav-linksLogo{
   height: 25px;
 }
-
+.rr {
+  margin-bottom: 10px;
+}
 .nav-links:hover {
   color: #e9ba23;
 }
-
 .login-button:hover {
   color: #9c9c9c!important;
 }
-
 .studio-link {
   height: 29px;
   width: 273px;
@@ -33,7 +35,9 @@
   font-size: 24px;
   line-height: 29px;
 }
-
+.barra3{
+  text-align: right;
+}
 .login-button {
   background-color: #0038FF;
   border-radius: 10px;
@@ -44,4 +48,33 @@
   line-height: 12px;
   padding: 5px 10px;
   text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    height: 12vh;
+  }
+  .barra2 {
+    top: 30px;
+  }
+  .barra3{
+    text-align: center!important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .navbar {
+    height: 14vh;
+  }
+  .okey{
+    position: absolute;
+    top: 0;
+  }
+  .barra2 {
+    top: 30px;
+  }
+  .barra3 {
+    position: absolute;
+    top: 60px;
+  }
 }
