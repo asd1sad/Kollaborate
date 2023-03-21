@@ -50,9 +50,10 @@
 .playLearn{
   display: inline-flex;
   flex-wrap: wrap;
+  font-family: "Inria Serif", serif;
+
 }
 #playnow {
-  font-family: 'Inria Serif';
   font-weight: 700;
   color: #B9AE85;
   font-size: 32px;
@@ -66,8 +67,10 @@
 #learnMore{
   color: #B9AE85;
   margin-left: 20px;
-  margin-top: 5px;
-  font-size: 27px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  
 }
 .underline{
   text-decoration-color: #B9AE85;

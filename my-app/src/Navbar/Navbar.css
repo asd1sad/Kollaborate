@@ -1,5 +1,7 @@
 .navbar{
   height: 10vh;
+  padding: 0px!important;
+  margin: 0px!important;
 }
 .nav-links {
   color: #000;
@@ -50,15 +52,34 @@
   text-align: center;
 }
 
+.okey{
+  padding: 0px!important;
+  margin: 0px!important;
+}
+
 @media only screen and (max-width: 480px) {
+  .okey{
+    position: absolute;
+    top: 0;
+  }
   .navbar {
     height: 12vh;
   }
   .barra2 {
     top: 30px;
+    padding: 10px;
+    margin: 0px;
+    padding-top: 20px;
+
+  }
+  .barra2 a{
+    margin: 10px;
+    padding: 0px!important;
   }
   .barra3{
     text-align: center!important;
+    bottom: 0px;
+    margin-bottom: 10px!important;
   }
 }
 
@@ -66,12 +87,30 @@
   .navbar {
     height: 14vh;
   }
-  .okey{
-    position: absolute;
-    top: 0;
-  }
+  
   .barra2 {
     top: 30px;
+    margin: 0px!important;
+    padding: 0px!important;
+  }
+  .barra3 {
+    position: absolute;
+    top: 60px;
+  }
+}
+
+
+@media only screen and (max-width: 280px) {
+   .studio-link{
+    font-size: medium;
+    padding: 5px;
+  }
+  .rr{
+    height: 15px;
+    margin-top: 5px;
+   }
+  .barra2 {
+    font-size: xx-small;
   }
   .barra3 {
     position: absolute;

@@ -1,7 +1,7 @@
 import psa2 from "../assets/c.png";
 import "./Game.css";
 
-const Game = () => {
+export const Game = () => {
   return (
       <div className="flex-container text-center fotoFondo">
         <div className="flex-item1 fotoATope">
@@ -34,4 +34,4 @@ const Game = () => {
   );
 };
 
-export default Game;
+
