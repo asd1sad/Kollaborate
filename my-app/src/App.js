@@ -7,7 +7,6 @@ import Game from './Game/Game.js';
  <Game />
 */
 
-
 function App() {
   return (
     <AppRouterK/>

@@ -4,13 +4,16 @@ import { Ok } from '../Ok.js';
 import { Mural } from '../Mural/Mural.js';
 import { Game } from '../Game/Game.js';
 
+const API_KEY =`${process.env.REACT_APP_KEY}`
+
+
 export const PrivateRoutesK = () => {
 
     return (
         <>
             <Navbar />
                     <Routes>  
-                        <Route path='/' element={<Game /> }/>
+                        <Route path='/' element={<Game  API_KEY={API_KEY}/> }/>
                         <Route path='/discover' element={<Ok /> } />
                         <Route path='/about'  element={<Ok />}/>
                         <Route path='/team' element={<Ok />} />

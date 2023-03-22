@@ -1,15 +1,17 @@
 import psa2 from "../assets/c.png";
 import "./Game.css";
 
-export const Game = () => {
+export const Game = (props) => {
   return (
       <div className="flex-container text-center fotoFondo">
+       { console.log("API", props.API_KEY, "Hola") }
+
         <div className="flex-item1 fotoATope">
             <img id="fotoCastleIn"src={psa2} alt="img5" />
         </div>
         <div className="flex-item2 ">
             <p id="texto">
-              Get ready to embark on the ultimate adventure with Castle in the
+             Get ready to embark on the ultimate adventure with Castle in the
               Woods - the game that will transport you to a world of excitement
               and mystery!<br></br><br></br> With stunning modern graphics and immersive gameplay,
               Castle in the Woods will have you on the edge of your seat as you
