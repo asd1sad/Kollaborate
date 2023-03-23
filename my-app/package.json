@@ -1,4 +1,5 @@
 {
+    "homepage": "https://asd1sad.github.io/Kollaborate",
     "name": "my-app",
     "version": "0.1.0",
     "private": true,
@@ -28,6 +29,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
+        "deploy": "gh-pages -d build",
         "dev": "next dev"
     },
     "eslintConfig": {
@@ -50,6 +52,7 @@
     },
     "devDependencies": {
         "dotenv-webpack": "^8.0.1",
+        "gh-pages": "^5.0.0",
         "sass": "^1.59.3",
         "sass-loader": "^13.2.1",
         "webpack": "^5.76.2"
