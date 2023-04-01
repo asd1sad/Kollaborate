@@ -1,13 +1,17 @@
 import psa2 from "../assets/c.png";
+import unity from "../assets/unity.png";
 import "./Game.css";
+import { Footer } from '../Footer/Footer.js';
+import { Stepinto } from "../Stepinto/Stepinto";
 
 export const Game = (props) => {
   return (
+    <>
       <div className="flex-container text-center fotoFondo">
-       { console.log("API", props.API_KEY, "Hola") }
 
-        <div className="flex-item1 fotoATope">
+        <div className="flex-item1">
             <img id="fotoCastleIn"src={psa2} alt="img5" />
+            <img id="unity" src={unity} />
         </div>
         <div className="flex-item2 ">
             <p id="texto">
@@ -33,6 +37,9 @@ export const Game = (props) => {
             </div>
         </div>
       </div>
+      <Stepinto />
+      <Footer />
+    </>
   );
 };
 

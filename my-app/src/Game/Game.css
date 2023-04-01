@@ -6,24 +6,42 @@
   background-position: center;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   width: 100%;
   height: 80vh;
 }
-.flex-item1, .flex-item2 {
-  display: flex;
-  flex-direction: column; 
+.flex-item1 {
+  width: 100%;
+}
+.flex-item2{
   width: 50%;
+}
+.flex-item1,.flex-item3{
+  position: relative;
+bottom: 7vh;
+right: 8vh;
+}
+.flex-item3{
+  bottom: -6vh;
 }
 #fotoCastleIn{
   width: 55%;
   height: auto;
-  margin: -0px 0px 230px 130px; 
+}
+.flex-item1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#unity{
+  height: 15%;
+  width:  15%;
+  position: relative;
+  top: 150px;   
 }
 #texto ,#texto2{
   position: relative;
-  z-index: 100; /* Este valor debe ser mayor que el valor de z-index del fondo borroso */
-  font-family: Inria Serif;
+  z-index: 100; 
+  font-family: "Inria Serif", serif;
   font-size: 23.62px;
   font-weight: 300;
   line-height: 29px;
@@ -42,16 +60,16 @@
   background: rgba(0, 0, 0, 0.22);
   filter: blur(16.5px);
   border-radius: 10px;
-  z-index: -140; /* Este valor debe ser menor que el valor de z-index del texto */
+  z-index: -140;
 }
 .no-underline {
   text-decoration: none;
 }
 .playLearn{
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   font-family: "Inria Serif", serif;
-
+  align-items: center;
 }
 #playnow {
   font-weight: 700;
@@ -80,16 +98,21 @@
 }
 @media only screen and (max-width: 480px) {
   .playLearn{
-    display: flex;
+    display: inline-flex;
     margin-right: 0px;  
+  }
+  #unity{
+    display: none;
   }
   #fotoCastleIn{
     margin: 0; 
     width: 70%;
+    bottom: 0px;
   }
+  
   .flex-item1{
-    display: flex;
-    align-items: center;
+  flex-direction: column; 
+  position: static;
   }
   #texto{
   display: none;
@@ -115,6 +138,4 @@
   #learnMore{
     display: none;
   }
-}
-
- 
+} 
